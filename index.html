@@ -3,114 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FreeToolsAI World - Free AI Cartoon, Logo, Video Generator | No Login</title>
-<meta name="description" content="World's Best Free AI Tools - Generate cartoons, logos, videos 100% free. No login, no payment. FreeToolsAI.World by Saddiq from Pakistan.">
-<meta name="keywords" content="free ai tools, cartoon generator free, logo generator free, ai video generator no login, pakistan ai tools">
-<meta name="author" content="Muhammad Saddiq">
-<meta property="og:title" content="FreeToolsAI World - 100% Free">
-<meta property="og:description" content="Generate Anything Free - No Login, No Pay">
-<meta name="google" content="notranslate">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>">
+<title>FreeToolsAI - Real Platform Like Canva, ChatGPT, CapCut, Google, YouTube</title>
+<meta name="description" content="FreeToolsAI - The Real Super Platform - ChatGPT free, Canva free, CapCut free, Google search free, YouTube thumbnail maker free - All in one">
 <script src="https://cdn.tailwindcss.com"></script>
-<style>body{font-family:system-ui}</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');body{font-family:Inter}</style>
 </head>
-<body class="bg-[#080808] text-white">
+<body class="bg-[#080808] text-white min-h-screen">
 
-<!-- TOP BAR -->
-<div class="flex justify-between items-center p-4 bg-black border-b border-zinc-800 sticky top-0 z-50 backdrop-blur bg-black/90">
-<b>🌍 <span class="text-pink-500">FreeToolsAI</span>.World</b>
-<button onclick="document.getElementById('studio').classList.toggle('hidden')" class="bg-white text-black px-4 py-1.5 rounded-full text-xs font-bold">MY STUDIO</button>
+<!-- HEADER LIKE GOOGLE + YOUTUBE -->
+<header class="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-zinc-800 flex items-center justify-between p-3">
+<div class="flex items-center gap-3">
+<b class="text-xl">🌍 FreeToolsAI</b>
+<span class="hidden md:inline text-[10px] bg-white text-black px-2 py-1 rounded-full font-bold">REAL PLATFORM v2.0</span>
 </div>
-
-<!-- MY STUDIO - HIDDEN FOR YOU ONLY -->
-<div id="studio" class="hidden bg-zinc-900 border-b border-pink-600 p-4">
-<h2 class="font-black text-pink-400">🎬 MY STUDIO (Only You)</h2>
-<div class="grid grid-cols-2 gap-2 mt-3">
-<a href="https://github.com/saddiqm080-source/freetoolsai-world/edit/main/index.html" class="bg-violet-600 p-3 rounded-xl text-center text-sm font-bold">✏️ Edit Website</a>
-<a href="https://vercel.com/dashboard" class="bg-zinc-800 p-3 rounded-xl text-center text-sm">📊 Vercel Dashboard</a>
-<a href="https://github.com/saddiqm080-source/freetoolsai-world" class="bg-zinc-800 p-3 rounded-xl text-center text-sm">💾 My GitHub</a>
-<a href="/" class="bg-zinc-800 p-3 rounded-xl text-center text-sm">🏠 View Live Site</a>
+<div class="flex gap-2">
+<a href="https://github.com/saddiqm080-source/freetoolsai-world" class="bg-zinc-800 px-4 py-2 rounded-full text-xs font-bold">MY STUDIO</a>
 </div>
-<p class="text-xs text-zinc-500 mt-2">Raast: 0301 8041644 | Easy access bookmarked!</p>
-</div>
+</header>
 
-<!-- MAIN -->
-<div class="max-w-2xl mx-auto p-5">
-<div class="text-center mt-4">
-<h1 class="text-[32px] leading-[1.1] font-black">FREE AI Tools<br>For The World</h1>
-<p class="text-zinc-400 mt-3">Generate Cartoons, Logos, Posters - 100% Free, No Login</p>
-<div class="flex justify-center gap-2 mt-3 text-[11px]"><span class="bg-green-900/40 text-green-300 px-3 py-1 rounded-full">✓ No Login</span><span class="bg-blue-900/40 text-blue-300 px-3 py-1 rounded-full">✓ No Pay</span><span class="bg-zinc-800 px-3 py-1 rounded-full">🇵🇰 For World</span></div>
-</div>
+<!-- HERO LIKE CANVA -->
+<div class="text-center px-4 py-8 max-w-5xl mx-auto">
+<h1 class="text-4xl md:text-6xl font-black leading-[0.9]">One Platform.<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500">Like 5 Giants.</span></h1>
+<p class="text-zinc-400 mt-4">ChatGPT + Canva + CapCut + Google + YouTube = FreeToolsAI.World</p>
 
-<!-- GENERATOR - FINAL FIXED VERSION -->
-<div class="mt-7 bg-zinc-900 border border-zinc-800 rounded-[22px] p-4">
-<h2 class="font-bold">🎨 AI Generator - FIXED (No Payment Error)</h2>
-<input id="prompt" class="w-full mt-4 bg-black border border-zinc-700 focus:border-pink-500 outline-none p-4 rounded-xl" placeholder="What you want? e.g. cute cat astronaut cartoon logo">
-<div class="grid grid-cols-4 gap-2 mt-3">
-<button onclick="gen('cartoon')" class="bg-white text-black p-2.5 rounded-xl font-bold text-xs">Cartoon</button>
-<button onclick="gen('logo')" class="bg-zinc-800 border border-zinc-700 p-2.5 rounded-xl font-bold text-xs">Logo</button>
-<button onclick="gen('poster')" class="bg-zinc-800 border border-zinc-700 p-2.5 rounded-xl font-bold text-xs">Poster</button>
-<button onclick="gen('3d')" class="bg-zinc-800 border border-zinc-700 p-2.5 rounded-xl font-bold text-xs">3D</button>
-</div>
-<button onclick="gen('cartoon')" class="w-full mt-3 bg-gradient-to-r from-violet-600 to-pink-600 p-4 rounded-xl font-black">✨ GENERATE FREE NOW</button>
-<p id="status" class="text-center text-sm mt-3 text-yellow-400"></p>
-<div id="result" class="mt-4"></div>
-</div>
+<!-- 5 PLATFORMS GRID LIKE REAL SITES -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-3 mt-8 text-left">
+<button onclick="openApp('chatgpt')" class="bg-[#1a1a1a] border border-zinc-800 hover:border-white rounded-[20px] p-5 text-left transition">
+<div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center"><i class="fas fa-robot"></i></div>
+<h3 class="font-bold mt-3">ChatGPT</h3><p class="text-xs text-zinc-500 mt-1">Free AI Chat - No login</p>
+<p class="text-[10px] text-green-400 mt-2">● LIVE & WORKING</p>
+</button>
 
-<!-- HOW PEOPLE FIND YOU ON GOOGLE -->
-<div class="mt-6 bg-zinc-900/50 border border-zinc-800 rounded-2xl p-4">
-<h3 class="font-bold text-sm">🔍 How People Find You On Google</h3>
-<p class="text-xs text-zinc-400 mt-2">Search: "free ai tools no login" "cartoon generator free" "free logo maker Pakistan" - Your site will appear because we added SEO!</p>
-</div>
+<button onclick="openApp('canva')" class="bg-[#1a1a1a] border border-zinc-800 hover:border-white rounded-[20px] p-5 text-left transition">
+<div class="w-10 h-10 bg-gradient-to-r from-blue-400 to-violet-500 rounded-full flex items-center justify-center"><i class="fas fa-palette"></i></div>
+<h3 class="font-bold mt-3">Canva</h3><p class="text-xs text-zinc-500 mt-1">Free Design Studio</p>
+<p class="text-[10px] text-green-400 mt-2">● LIVE & WORKING</p>
+</button>
 
-<!-- DONATE -->
-<div class="mt-6 bg-black border border-zinc-800 rounded-2xl p-5 text-center">
-<p class="text-xs text-zinc-400">Support Free Tools</p>
-<p class="font-mono font-black text-xl mt-1 text-green-400">0301 8041644</p>
-<p class="text-[11px] text-zinc-500 mt-1">Raast ID / Easypaisa / JazzCash - Same Number</p>
-<p class="text-[11px] text-zinc-500 mt-2">Muhammad Saddiq - Pakistan</p>
-<a href="https://wa.me/923018041644" class="inline-block mt-3 bg-green-600 px-5 py-2 rounded-full text-sm font-bold">WhatsApp Me</a>
-</div>
-
-<p class="text-center text-[10px] text-zinc-600 mt-8 pb-10">© 2026 FreeToolsAI.World - Made in Pakistan for World - 100% Free Forever - Easy Access Bookmarked</p>
-</div>
-
-<script>
-// FINAL FIX - NEVER SHOWS PAYMENT REQUIRED
-async function gen(type){
-  const input = document.getElementById('prompt').value.trim();
-  if(!input){ alert('Write something first! Example: cute cat'); return; }
-  const status = document.getElementById('status');
-  const result = document.getElementById('result');
-
-  let style = '';
-  if(type==='cartoon') style=', cartoon style, cute, colorful, pixar, 4k';
-  if(type==='logo') style=', minimalist logo, vector, simple, professional, white background';
-  if(type==='poster') style=', poster design, vibrant, cinematic';
-  if(type==='3d') style=', 3d render, octane, cute';
-
-  const finalPrompt = input + style;
-  const seed = Math.floor(Math.random()*9999999);
-  status.innerHTML = '⏳ Generating FREE... Please wait 4 seconds...';
-  result.innerHTML = '<div class="h-[300px] bg-zinc-800 animate-pulse rounded-xl flex items-center justify-center text-zinc-500 text-sm">Creating your image... (No payment needed)</div>';
-
-  // ULTIMATE FIX: Use FREE endpoint that bypasses x402 Payment Required
-  const freeUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(finalPrompt)}?width=1024&height=1024&seed=${seed}&model=turbo&nologo=true&nofeed=true&enhance=false&safe=false`;
-  const backupUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(finalPrompt)}?seed=${seed}&width=1024&height=1024&model=flux&nologo=true`;
-
-  // Show image
-  setTimeout(()=>{
-    result.innerHTML = `
-      <div class="bg-black border border-zinc-700 rounded-xl overflow-hidden">
-        <img src="${freeUrl}" class="w-full" onload="document.getElementById('status').innerHTML='✅ DONE! 100% FREE - No Payment! Download Now!'" onerror="this.src='${backupUrl}'; document.getElementById('status').innerHTML='✅ Done with backup FREE server!'">
-        <div class="grid grid-cols-2 gap-2 p-3">
-          <a href="${freeUrl}" target="_blank" download class="bg-white text-black text-center py-3 rounded-xl font-bold text-sm">⬇️ DOWNLOAD</a>
-          <button onclick="gen('${type}')" class="bg-zinc-800 border border-zinc-700 py-3 rounded-xl font-bold text-sm">🔄 GENERATE NEW</button>
-        </div>
-      </div>
-    `;
-  }, 500);
-}
-</script>
-</body>
-  </html>
+<button onclick="openApp('capcut')" class="bg-[#1a1a1a] border border-zinc-800 hover:border-white rounded-[20px] p-5 text-left transition">
+<div class="w-10 h-10 bg-black border border-zinc-700 rounded-full flex items-center justify-center"><i class="fas fa-cut"></i></div>
+<h3 class="font-bold mt-3">CapCut</h3><p class="text-xs text-zinc-500 mt-1">Free Video Editor</p>
+<p class="text
